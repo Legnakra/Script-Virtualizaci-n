@@ -7,8 +7,19 @@
 
 #Zona de declaración de funciones.
 
+#Fin de declaración de funciones.
 
-
+#Función finalizar script
+function f_inicio {
+    echo " "
+    echo "###########################################################################"
+    echo "############################### Bienvenid@ ################################"
+    echo "###########################################################################"
+    echo " "
+    echo " En este script vamos a configurar una máuina virtual."
+    echo " ¡Comencemos! "
+    echo " "
+}
 
 #Función comprobar conexión.
 function f_internet {
@@ -369,6 +380,7 @@ function f_finalizar {
 }
 
 #Llamada de funciones.
+f_inicio
 f_internet
 f_virsh
 f_redimensionar
@@ -384,8 +396,9 @@ f_instalar_apache
 f_copiar_index
 f_comprobar_acceso
 f_instalar_lxc
-#f_añadir_br0
-#f_mostrar_ip_br0
+f_añadir_br0
+f_mostrar_ip_br0
 f_aumentar_ram
 f_crear_snapshot
+f_finalizar
 exit 0;
