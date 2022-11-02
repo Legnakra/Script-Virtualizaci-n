@@ -16,7 +16,7 @@ function f_inicio {
     echo "############################### Bienvenid@ ################################"
     echo "###########################################################################"
     echo " "
-    echo " En este script vamos a configurar una máuina virtual."
+    echo " En este script vamos a configurar una máquina virtual."
     echo " ¡Comencemos! "
     echo " "
 }
