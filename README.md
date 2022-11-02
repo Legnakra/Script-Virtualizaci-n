@@ -45,7 +45,7 @@ apt install openssh-server
 virt-sparsify --compress /var/lib/libvirt/images/bullseye-base.qcow2 /var/lib/libvirt/images/bullseye-spare.qcow2
 ~~~
 
-## Script
+## ./virsh.sh
 Lo que debe hacer el script es:
 1. Crear una imagen que use la imagen reducida de Debian 11 que hemos creado en el paso anterior con 5GB denominada *maquina1-qcow2*.
 2. Crear una red llamada *intra* con salida al exterior mediante NAT y su direccionamiento sea 10.10.20.0/24
@@ -85,7 +85,7 @@ ssh debian@10.10.20.X "sudo lxc-start -n contenedor1 && sudo lxc-attach -n conte
 virsh -c qemu:///system snapshot-list maquina1
 ~~~
 
-## Entrega
+## Para que funcione...
 - El script debe estar en un fichero llamado *script.sh*.
 - El script debe tener permisos de ejecución.
 - El script debe estar en el mismo directorio que el fichero bullseye-spare.qcow2.
