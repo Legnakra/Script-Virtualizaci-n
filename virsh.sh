@@ -115,7 +115,6 @@ function f_crear_red {
     fi
 }
 
-
 #Función crear imagen con 5 GB
 function f_crear_imagen {
     echo " "
@@ -191,6 +190,7 @@ function f_reiniciar_máquina {
     echo "La máquina se ha reiniciado correctamente."
     return 0;
 }
+
 #Función crear volumen formato RAW de 1 GB
 function f_crear_volumen {
     echo " "
@@ -402,3 +402,4 @@ f_aumentar_ram
 f_crear_snapshot
 f_finalizar
 exit 0;
+#Fin llamada de funciones
