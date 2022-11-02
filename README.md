@@ -69,21 +69,25 @@ Lo que debe hacer el script es:
 ~~~
 ssh -i ~/.ssh/id_edcsa debian@10.10.20.X "df -h"
 ~~~
+![Disco montado](/img/1.png)
 
 2. Mostrar que se ha ampliado la RAM de la máquina.
 ~~~
 ssh -i ~/.ssh/id_edcsa debian@10.10.20.X "free -h"
 ~~~
+![RAM](/img/2.png)
 
 3. Mostrar que se puede acceder a contenedor1.
 ~~~
 ssh debian@10.10.20.X "sudo lxc-start -n contenedor1 && sudo lxc-attach -n contenedor1"
 ~~~
+![LXC](/img/3.png)
 
 4. Mostrar que se ha creado snapshot1.
 ~~~
 virsh -c qemu:///system snapshot-list maquina1
 ~~~
+![Snapshot](/img/4.png)
 
 ## Para que funcione...
 - El script debe tener permisos de ejecución.
