@@ -88,6 +88,7 @@ virsh -c qemu:///system snapshot-list maquina1
 ## Para que funcione...
 - El script debe tener permisos de ejecución.
 - El script debe estar en el mismo directorio que el fichero bullseye-spare.qcow2.
+- La imagen *bullseye-spare.qcow2* la encontraréis en [el siguiente enlace](https://drive.google.com/file/d/1kPcWXOG-J24P2e3bmwJDJVWjezRXp6Cn/view?usp=share_link)
 
 ## Autora :computer:
 * María Jesús Alloza Rodríguez
